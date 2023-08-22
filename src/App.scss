@@ -1,0 +1,327 @@
+@import "./assets/variables";
+
+.container {
+    max-width: map-get($map: $grid-breakpoints, $key: xl);
+}
+.flex   {display: flex;}
+
+// sizing
+w-full  {width: 100%;}
+w-80    {width: 80%;} // 4/5
+
+// text
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 105px;
+    letter-spacing: 0;
+    text-align: left;
+}
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 1.5px;
+    text-align: left;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0;
+    text-align: left;
+}
+.span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-align: left;
+}
+
+hr {border-width: 3px;border-radius: 0.25rem;}
+.bg-white   {background-color: map-get($map: $colors, $key: white) !important;}
+.text-black {color: map-get($map: $colors, $key: black) !important;}
+.text-gray-01 {color: map-get($map: $colors, $key: gray-01) !important;}
+.text-gray-02 {color: map-get($map: $colors, $key: gray-02) !important;}
+.text-purple-01 {color: map-get($map: $colors, $key: purple-01) !important;}
+
+// spacing
+.py-14  {padding-top: 3.5rem;padding-bottom: 3.5rem;}
+.py-16  {padding-top: 4rem;padding-bottom: 4rem;}
+.py-18  {padding-top: 4.5rem;padding-bottom: 4.5rem;}
+
+.pt-4   {padding-top: 1rem;}
+.pt-6   {padding-top: 1.5rem;}
+.pt-8   {padding-top: 2rem;}
+.pt-10  {padding-top: 2.5rem;}
+.pt-12  {padding-top: 3rem;}
+.pt-14  {padding-top: 3.5rem;}
+.pt-16  {padding-top: 4rem;}
+.pt-18  {padding-top: 4.5rem;}
+
+.pb-4   {padding-bottom: 1rem;}
+.pb-6   {padding-bottom: 1.5rem;}
+.pb-8   {padding-bottom: 2rem;}
+.pb-10  {padding-bottom: 2.5rem;}
+.pb-12  {padding-bottom: 3rem;}
+
+.px-4  {padding-left: 1rem; padding-right: 1rem;}
+.px-6  {padding-left: 1.5rem; padding-right: 1.5rem;}
+.px-10  {padding-left: 2rem; padding-right: 2rem;}
+
+.pl-4   {padding-left: 1rem;}
+.pl-6   {padding-left: 1.5rem;}
+.pl-8   {padding-left: 2rem;}
+.pl-10  {padding-left: 2.5rem;}
+.pl-12  {padding-left: 3rem;}
+
+.pr-4   {padding-right: 1rem;}
+.pr-6   {padding-right: 1.5rem;}
+.pr-8   {padding-right: 2rem;}
+.pr-10  {padding-right: 2.5rem;}
+.pr-12  {padding-right: 3rem;}
+
+.mt-3   {margin-top: 3rem;}
+
+.alice-carousel {
+    margin-top: -2.75rem;
+    
+    &__wrapper {
+      background-color: map-get($map: $colors, $key: light-purple-02) !important;
+    }
+  
+    &__dots {
+      position: relative;
+      margin-top: -3rem;
+  
+      &-item {
+        &:not(.__custom) {
+          width: 10px;
+          height: 10px;
+          background-color: map-get($map: $colors, $key: gray-04);
+        }
+        &:not(.__custom):hover, &:not(.__custom).__active {
+          background-color: map-get($map: $colors, $key: purple-03);
+        }
+        &:not(.__custom):not(:last-child) {
+          margin-right: 12px;
+        }
+      }
+    }
+}
+
+// div
+.athlets {
+    position: relative;
+
+    .img-container {
+        position: absolute;
+        padding-top: 6rem;
+    }
+}
+
+.player {
+    position: relative;
+
+    .img-container {
+        position: absolute;
+        top: 0;
+        padding-left: 5rem;
+    }
+}
+
+
+@media (min-width: map-get($map: $grid-breakpoints, $key: xl)) {
+    .w-39-xl    {width: 39%;}
+    .py-10-xl   {padding-top: 2.5rem;padding-bottom: 2.5rem;}
+    .py-14-xl   {padding-top: 3.3rem; padding-bottom: 3.3rem;}
+    .py-22-xl   {padding-top: 5.5rem; padding-bottom: 5.5rem;}
+    .pt-6-xl    {padding-top: 1.5rem;}
+    .pt-8-xl    {padding-top: 2rem;}
+    .pt-10-xl   {padding-top: 2.5rem;}
+    .pt-12-xl   {padding-top: 3rem;}
+    .pt-13-xl   {padding-top: 3.6rem;}
+    .pt-14-xl   {padding-top: 4rem;}
+    .pt-22-xl   {padding-top: 5.5rem;}
+    .pt-32-xl   {padding-top: 8rem;}
+    .pb-12-xl   {padding-bottom: 3rem;}
+    .pb-14-xl   {padding-bottom: 3.5rem;}
+    .pb-16-xl   {padding-bottom: 4rem;}
+    .pb-18-xl   {padding-bottom: 4.5rem;}
+    .pb-20-xl   {padding-bottom: 5rem;}
+    .pb-22-xl   {padding-bottom: 5.5rem;}
+    .pb-24-xl   {padding-bottom: 6rem;}
+    .pb-28-xl   {padding-bottom: 7rem;}
+    .pl-80-xl   {padding-left: 20rem;}
+    .pl-50pc-xl {padding-left: 50%;}
+    .pr-64-xl   {padding-right: 16rem;}
+    .athlets {
+        .img-container {
+            padding-top: 2.5rem;
+            padding-left: 10rem;
+            margin-right: 8rem;
+        }
+    }
+    .player {
+        .img-container {
+            transform: translateX(60%) !important;
+            margin-left: 3rem;
+        }
+    }
+}
+
+@media (min-width: map-get($map: $grid-breakpoints, $key: lg)) and (max-width: 1440px){
+    .w-35-lg    {width: 35%;}
+    .w-40-lg    {width: 40%;}
+    .w-80-lg    {width: 80%;}
+    .py-10-lg   {padding-top: 2.5rem; padding-bottom: 2.5rem;}
+    .py-12-lg   {padding-top: 3rem; padding-bottom: 3rem;}
+    .py-14-lg   {padding-top: 3.5rem; padding-bottom: 3.5rem;}
+    .py-16-lg   {padding-top: 4rem; padding-bottom: 4rem;}
+    .py-20-lg   {padding-top: 5rem; padding-bottom: 5rem;}
+    .py-22-lg   {padding-top: 5.5rem; padding-bottom: 5.5rem;}
+    .pt-8-lg    {padding-top: 2rem;}
+    .pt-10-lg   {padding-top: 2.5rem;}
+    .pt-12-lg   {padding-top: 3rem;}
+    .pt-20-lg   {padding-top: 5rem;}
+    .pt-22-lg   {padding-top: 5.5rem;}
+    .pt-24-lg   {padding-top: 6rem;}
+    .pb-6-lg    {padding-bottom: 1.5rem;}
+    .pb-8-lg    {padding-bottom: 2rem;}
+    .pb-10-lg   {padding-bottom: 2.5rem;}
+    .pb-12-lg   {padding-bottom: 3rem;}
+    .pb-16-lg   {padding-bottom: 4rem;}
+    .pl-54-lg   {padding-left: 12rem;}
+    .pl-56-lg   {padding-left: 14rem;}
+    .pl-50pc-lg {padding-left: 50%;}
+    .pr-24-lg   {padding-right: 6rem;}
+
+    .athlets {
+        .img-container {
+            padding-top: 1.5rem;
+            padding-left: 2rem;
+            margin-right: 0;
+        }
+    }
+
+    .player {
+        .img-container {
+            right: 0;
+            padding-left: 0;
+            padding-right: 0;
+            margin-top: 1.75rem;
+            margin-right: -2rem;
+        }
+    }
+ }
+
+@media (min-width: map-get($map: $grid-breakpoints, $key: md)) and (max-width: 1279px) {
+    p { font-size: 18px; }
+    .w-55-md    {width: 55%;}
+    .w-60-md    {width: 60%;}
+    .py-8-md    {padding-top: 2rem; padding-bottom: 2rem;}
+    .py-10-md   {padding-top: 2.5rem; padding-bottom: 2.5rem;}
+    .py-12-md   {padding-top: 3rem; padding-bottom: 3rem;}
+    .py-14-md   {padding-top: 3.5rem; padding-bottom: 3.5rem;}
+    .py-15-md   {padding-top: 3.7rem; padding-bottom: 3.7rem;}
+    .py-16-md   {padding-top: 4rem; padding-bottom: 4rem;}
+    .pt-10-md   {padding-top: 2.5rem;}
+    .pt-14-md   {padding-top: 3.5rem;}
+    .pt-20-md   {padding-top: 5rem;}
+    .pb-4-md    {padding-bottom: 1rem;}
+    .pb-10-md   {padding-bottom: 2.5rem;}
+    .pb-14-md   {padding-bottom: 3.5rem;}
+    .pb-16-md   {padding-bottom: 4rem;}
+    .pb-18-md   {padding-bottom: 4.5rem;}
+    .pl-38pc-md {padding-left: 38%;}
+    .athlets {
+        .img-container {
+            left: 0;
+        }
+    }
+    .player {
+        .img-container {
+            transform: none;
+            right: 0;
+            margin-top: 2.5rem;
+        }
+    }
+
+}
+
+@media (min-width: map-get($map: $grid-breakpoints, $key: sm)) and (max-width: 767px) {
+    .w-70-sm    {width: 70%;}
+    .w-75-sm    {width: 75%;}
+    .pl-2-sm    {padding-left: 0.5rem;}
+    .pl-3-sm    {padding-left: 0.75rem;}
+    .px-6-sm    {padding-left: 1rem; padding-right: 1.5rem;}
+    h2 {
+        font-size: 50px;
+        line-height: 59px !important;
+    }
+    h4 {
+        font-size: 28px;
+        line-height: 33px !important;
+    }
+    p {
+        font-size: 15px;
+        line-height: 18px !important;
+    }
+    .span {
+        padding-top: 5px;
+        font-size: 14px;
+        line-height: 16px !important;
+    }
+    hr  {border-width: 2px;}
+
+    .disp {
+        display: none;
+    }
+    
+
+    .athlets {
+        .img-container {
+            position: relative;
+            transform: translateY(5%);
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            padding-top: 0;
+            z-index: 999;
+        }
+
+        .alice-carousel {
+            margin-top: -2.75rem;
+            &__stage {
+                min-height: 290px;
+            }
+        }
+    }
+
+    .player {
+        .img-container {
+            position: relative;
+            transform: none;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            padding: 1rem;
+            z-index: 999;
+        }
+
+        .alice-carousel {
+            margin-top: -3rem;
+            &__stage {
+                min-height: 250px;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
+$grid-breakpoints: (
+  sm: 320px,
+  md: 768px,
+  lg: 1280px,
+  xl: 1920px,
+);
+
+$colors: (
+    'white':  #FFFFFF, //bg 1, uline,
+    'black':  #000000, //number, p-text, 
+    'purple-01': #603EBE, //uline
+    'purple-02': #5E3DB3, //block 03
+    'purple-03': #5C3CAF, // dot active
+    'light-purple-01': #8F6BE8, //text p2 r3
+    'light-purple-02': #F5F4F9, //block 02
+    'dark-purple':  #090C35, //block 04
+    'gray-01':  #C2C2C2,
+    'gray-02':  #E7E7E7, //h2
+    'gray-03':  #979797, //border span uline p2 r1
+    'gray-04':  #D8D8D8, // dot
+);
