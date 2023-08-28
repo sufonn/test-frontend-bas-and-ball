@@ -1,13 +1,9 @@
 @import "./assets/variables";
 
-.container {
-    max-width: map-get($map: $grid-breakpoints, $key: xl);
-}
 .flex   {display: flex;}
 
 // sizing
-w-full  {width: 100%;}
-w-80    {width: 80%;} // 4/5
+.w-full  {width: 100%;}
 
 // text
 h2 {
@@ -44,48 +40,28 @@ p {
 
 hr {border-width: 3px;border-radius: 0.25rem;}
 .bg-white   {background-color: map-get($map: $colors, $key: white) !important;}
+.bg-purple-02 {background-color: map-get($map: $colors, $key: purple-02) !important;}
+.bg-light-purple-02 {background-color: map-get($map: $colors, $key: light-purple-02) !important;}
+.bg-dark-purple {background-color: map-get($map: $colors, $key: dark-purple) !important;}
+
+.text-white {color: map-get($map: $colors, $key: white) !important;}
 .text-black {color: map-get($map: $colors, $key: black) !important;}
 .text-gray-01 {color: map-get($map: $colors, $key: gray-01) !important;}
 .text-gray-02 {color: map-get($map: $colors, $key: gray-02) !important;}
 .text-purple-01 {color: map-get($map: $colors, $key: purple-01) !important;}
+.text-light-purple-01 {color: map-get($map: $colors, $key: light-purple-01) !important;}
 
 // spacing
-.py-14  {padding-top: 3.5rem;padding-bottom: 3.5rem;}
-.py-16  {padding-top: 4rem;padding-bottom: 4rem;}
-.py-18  {padding-top: 4.5rem;padding-bottom: 4.5rem;}
+.pt-16 {padding-top: 4rem;}
+.pt-18 {padding-top: 4.5rem;}
+.pb-6 {padding-bottom: 1.5rem;}
+.pl-4 {padding-left: 1rem;}
+.pl-5 {padding-left: 0.625rem;}
+.py-16 {padding-top: 4rem;padding-bottom: 4rem;}
+.py-18 {padding-top: 4.5rem;padding-bottom: 4.5rem;}
 
-.pt-4   {padding-top: 1rem;}
-.pt-6   {padding-top: 1.5rem;}
-.pt-8   {padding-top: 2rem;}
-.pt-10  {padding-top: 2.5rem;}
-.pt-12  {padding-top: 3rem;}
-.pt-14  {padding-top: 3.5rem;}
-.pt-16  {padding-top: 4rem;}
-.pt-18  {padding-top: 4.5rem;}
-
-.pb-4   {padding-bottom: 1rem;}
-.pb-6   {padding-bottom: 1.5rem;}
-.pb-8   {padding-bottom: 2rem;}
-.pb-10  {padding-bottom: 2.5rem;}
-.pb-12  {padding-bottom: 3rem;}
-
-.px-4  {padding-left: 1rem; padding-right: 1rem;}
-.px-6  {padding-left: 1.5rem; padding-right: 1.5rem;}
-.px-10  {padding-left: 2rem; padding-right: 2rem;}
-
-.pl-4   {padding-left: 1rem;}
-.pl-6   {padding-left: 1.5rem;}
-.pl-8   {padding-left: 2rem;}
-.pl-10  {padding-left: 2.5rem;}
-.pl-12  {padding-left: 3rem;}
-
-.pr-4   {padding-right: 1rem;}
-.pr-6   {padding-right: 1.5rem;}
-.pr-8   {padding-right: 2rem;}
-.pr-10  {padding-right: 2.5rem;}
-.pr-12  {padding-right: 3rem;}
-
-.mt-3   {margin-top: 3rem;}
+.mt-3 {margin-top: 0.75rem;}
+.mb-4 {margin-bottom: 1rem;}
 
 .alice-carousel {
     margin-top: -2.75rem;
@@ -120,7 +96,29 @@ hr {border-width: 3px;border-radius: 0.25rem;}
 
     .img-container {
         position: absolute;
-        padding-top: 6rem;
+        padding-top: 2.5rem;
+        padding-left: 6rem;
+    }
+
+    .block1 {
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+        padding-left: 48%;
+        padding-right: 2.5rem;
+
+        h2 {padding-bottom: 2rem;}
+    }
+    .block2 {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+        padding-left: 48%;
+        padding-right: 2.5rem;
+
+    }
+    .block3 {
+        padding-left: 48%;
+        padding-right: 2.5rem;
+
     }
 }
 
@@ -132,38 +130,39 @@ hr {border-width: 3px;border-radius: 0.25rem;}
         top: 0;
         padding-left: 5rem;
     }
+
+    .block1 {
+        h2 {padding-bottom: 2rem;}
+    }
 }
 
 
 @media (min-width: map-get($map: $grid-breakpoints, $key: xl)) {
     .w-39-xl    {width: 39%;}
-    .py-10-xl   {padding-top: 2.5rem;padding-bottom: 2.5rem;}
-    .py-14-xl   {padding-top: 3.3rem; padding-bottom: 3.3rem;}
-    .py-22-xl   {padding-top: 5.5rem; padding-bottom: 5.5rem;}
-    .pt-6-xl    {padding-top: 1.5rem;}
-    .pt-8-xl    {padding-top: 2rem;}
-    .pt-10-xl   {padding-top: 2.5rem;}
-    .pt-12-xl   {padding-top: 3rem;}
-    .pt-13-xl   {padding-top: 3.6rem;}
-    .pt-14-xl   {padding-top: 4rem;}
-    .pt-22-xl   {padding-top: 5.5rem;}
-    .pt-32-xl   {padding-top: 8rem;}
-    .pb-12-xl   {padding-bottom: 3rem;}
-    .pb-14-xl   {padding-bottom: 3.5rem;}
     .pb-16-xl   {padding-bottom: 4rem;}
-    .pb-18-xl   {padding-bottom: 4.5rem;}
-    .pb-20-xl   {padding-bottom: 5rem;}
-    .pb-22-xl   {padding-bottom: 5.5rem;}
-    .pb-24-xl   {padding-bottom: 6rem;}
-    .pb-28-xl   {padding-bottom: 7rem;}
-    .pl-80-xl   {padding-left: 20rem;}
-    .pl-50pc-xl {padding-left: 50%;}
-    .pr-64-xl   {padding-right: 16rem;}
+
     .athlets {
         .img-container {
             padding-top: 2.5rem;
             padding-left: 10rem;
             margin-right: 8rem;
+        }
+
+        .block1 {
+            padding-top: 2rem;
+            padding-bottom: 3.5rem;
+            padding-left: 50%;
+            padding-right: 16rem;
+    
+            h2 {padding-bottom: 4rem;}
+        }
+        .block2 {
+            padding-right: 16rem;
+        }
+        .block3 {
+            padding-top: 5.5rem;
+            padding-bottom: 5.5rem;
+            padding-right: 16rem;
         }
     }
     .player {
@@ -171,40 +170,38 @@ hr {border-width: 3px;border-radius: 0.25rem;}
             transform: translateX(60%) !important;
             margin-left: 3rem;
         }
+
+        .block1 {
+            h2 {padding-bottom: 4rem;}
+        }
     }
 }
 
 @media (min-width: map-get($map: $grid-breakpoints, $key: lg)) and (max-width: 1440px){
     .w-35-lg    {width: 35%;}
     .w-40-lg    {width: 40%;}
-    .w-80-lg    {width: 80%;}
-    .py-10-lg   {padding-top: 2.5rem; padding-bottom: 2.5rem;}
-    .py-12-lg   {padding-top: 3rem; padding-bottom: 3rem;}
-    .py-14-lg   {padding-top: 3.5rem; padding-bottom: 3.5rem;}
-    .py-16-lg   {padding-top: 4rem; padding-bottom: 4rem;}
-    .py-20-lg   {padding-top: 5rem; padding-bottom: 5rem;}
-    .py-22-lg   {padding-top: 5.5rem; padding-bottom: 5.5rem;}
-    .pt-8-lg    {padding-top: 2rem;}
-    .pt-10-lg   {padding-top: 2.5rem;}
-    .pt-12-lg   {padding-top: 3rem;}
-    .pt-20-lg   {padding-top: 5rem;}
-    .pt-22-lg   {padding-top: 5.5rem;}
-    .pt-24-lg   {padding-top: 6rem;}
-    .pb-6-lg    {padding-bottom: 1.5rem;}
     .pb-8-lg    {padding-bottom: 2rem;}
-    .pb-10-lg   {padding-bottom: 2.5rem;}
-    .pb-12-lg   {padding-bottom: 3rem;}
-    .pb-16-lg   {padding-bottom: 4rem;}
-    .pl-54-lg   {padding-left: 12rem;}
-    .pl-56-lg   {padding-left: 14rem;}
-    .pl-50pc-lg {padding-left: 50%;}
-    .pr-24-lg   {padding-right: 6rem;}
 
     .athlets {
         .img-container {
-            padding-top: 1.5rem;
-            padding-left: 2rem;
-            margin-right: 0;
+            .img-lg {width: 480px;}
+        }
+
+        .block1 {
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+            padding-right: 6rem;
+
+            h2 {padding-bottom: 2rem;}
+        }
+        .block2 {
+            padding-bottom: 2.5rem;
+            padding-right: 6rem;
+        }
+        .block3 {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            padding-right: 6rem;
         }
     }
 
@@ -212,9 +209,10 @@ hr {border-width: 3px;border-radius: 0.25rem;}
         .img-container {
             right: 0;
             padding-left: 0;
-            padding-right: 0;
+            padding-right: 5rem;
             margin-top: 1.75rem;
-            margin-right: -2rem;
+
+            .img-lg {width: 650px;}
         }
     }
  }
@@ -223,24 +221,29 @@ hr {border-width: 3px;border-radius: 0.25rem;}
     p { font-size: 18px; }
     .w-55-md    {width: 55%;}
     .w-60-md    {width: 60%;}
-    .py-8-md    {padding-top: 2rem; padding-bottom: 2rem;}
-    .py-10-md   {padding-top: 2.5rem; padding-bottom: 2.5rem;}
-    .py-12-md   {padding-top: 3rem; padding-bottom: 3rem;}
-    .py-14-md   {padding-top: 3.5rem; padding-bottom: 3.5rem;}
-    .py-15-md   {padding-top: 3.7rem; padding-bottom: 3.7rem;}
-    .py-16-md   {padding-top: 4rem; padding-bottom: 4rem;}
-    .pt-10-md   {padding-top: 2.5rem;}
-    .pt-14-md   {padding-top: 3.5rem;}
-    .pt-20-md   {padding-top: 5rem;}
     .pb-4-md    {padding-bottom: 1rem;}
     .pb-10-md   {padding-bottom: 2.5rem;}
-    .pb-14-md   {padding-bottom: 3.5rem;}
-    .pb-16-md   {padding-bottom: 4rem;}
-    .pb-18-md   {padding-bottom: 4.5rem;}
-    .pl-38pc-md {padding-left: 38%;}
+    
     .athlets {
         .img-container {
             left: 0;
+        }
+
+        .block1 {
+            padding-top: 5rem;
+            padding-left: 38%;
+
+            h2{padding-bottom: 2.5rem;}
+        }
+        .block2 {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            padding-left: 38%;
+        }
+        .block3 {
+            padding-top: 2.5rem;
+            padding-bottom: 4rem;
+            padding-left: 38%;
         }
     }
     .player {
@@ -250,7 +253,6 @@ hr {border-width: 3px;border-radius: 0.25rem;}
             margin-top: 2.5rem;
         }
     }
-
 }
 
 @media (min-width: map-get($map: $grid-breakpoints, $key: sm)) and (max-width: 767px) {

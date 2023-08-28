@@ -59,30 +59,29 @@ function App () {
     ];
 
     return (
-        <div className="container bg-white">
-        <div className="">
-          {window.innerWidth > 767 ? 
+        <div className="bg-white">
+        {window.innerWidth > 767 ? 
             <React.Fragment>
               <div className="athlets">
                 <div className="img-container w-75-sm">
-                    <img src={window.innerWidth > 1279 ? imgFootballDesktop : window.innerWidth > 767 ? imgFootballTablet : imgFootballMobile} alt="ball-player" className="w-full w-80-lg"/>
+                    <img src={window.innerWidth > 1279 ? imgFootballDesktop : window.innerWidth > 767 ? imgFootballTablet : imgFootballMobile} alt="ball-player" className="w-full img-lg"/>
                 </div>
-                <div className="pt-8-xl pt-10-lg pt-20-md pt-12 pb-14-xl pb-10-lg pb-8 pl-50pc-xl pl-50pc-lg pl-38pc-md pr-64-xl pr-24-lg">
-                    <h2 className="text-gray-02 pb-16-xl pb-8-lg pb-10-md">ATHLETS</h2>
+                <div className="block1">
+                    <h2 className="text-gray-02">ATHLETS</h2>
                     <div className="flex pb-6">
                     <div className="text-black span">01<hr className="text-purple-01" /></div>
                     <h4 className="text-gray-01 pl-4">CONNECTION</h4>
                     </div>
                     <p className="text-black">Connect with coaches directly, you can ping coaches to view profile.</p>
                 </div>
-                <div className="bg-light-purple-02 py-14-xl py-14-lg py-8-md pl-50pc-xl pl-50pc-lg pl-38pc-md pr-64-xl pr-24-lg pr-10">
+                <div className="bg-light-purple-02 block2">
                     <div className="flex pb-6">
                     <div className="text-black span">02<hr className="text-purple-01" /></div>
                     <h4 className="text-gray-01 pl-4">COLLABORATION</h4>
                     </div>
                     <p className="text-black">Work with other student athletes to increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.</p>
                 </div>
-                <div className="bg-purple-02 py-22-xl py-20-lg py-10-md pb-16-md pl-50pc-xl pl-50pc-lg pl-38pc-md pr-64-xl pr-24-lg pr-10">
+                <div className="bg-purple-02 block3">
                     <div className="flex pb-6">
                     <div className="text-black span">03<hr className="text-white" /></div>
                     <h4 className="text-gray-01 pl-4">GROWTH</h4>
@@ -92,9 +91,9 @@ function App () {
               </div>  
               <div className="player">
                 <div className="img-container">
-                  <img src={window.innerWidth > 1279 ? imgBasDesktop : window.innerWidth > 767 ? imgBasTablet : imgBasMobile} alt="bas-player" className="w-full w-80-lg" />
+                  <img src={window.innerWidth > 1279 ? imgBasDesktop : window.innerWidth > 767 ? imgBasTablet : imgBasMobile} alt="bas-player" className="w-full img-lg" />
                 </div>
-                <div className="pt-32-xl pt-20-lg pt-14 pb-14-xl pb-12-lg pb-4-md pl-80-xl pl-54-lg pl-8">
+                <div className="block1">
                   <h2 className="text-gray-02 pb-18-xl pb-16-lg pb-10-md">PLAYERS</h2>
                   <div className="flex pb-6 pb-4-md">
                     <div className="text-black span">01<hr className="text-purple-01" /></div>
@@ -102,14 +101,14 @@ function App () {
                   </div>
                   <p className="text-black w-39-xl w-40-lg w-60-md">Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.</p>
                 </div>
-                <div className="bg-light-purple-02 pt-13-xl pt-8-lg py-14-md pb-24-xl pb-10-lg pb-16-md pl-80-xl pl-54-lg pl-8">
+                <div className="bg-light-purple-02 block2">
                   <div className="flex pb-6 pb-4-md">
                     <div className="text-black span">02<hr className="text-purple-01" /></div>
                     <h4 className="text-gray-01 pl-4">COLLABORATION</h4>
                   </div>
                   <p className="text-black w-35-lg w-55-md">Work with recruiter to increase your chances of finding talented athlete.</p>
                 </div>
-                <div className="bg-dark-purple pt-22-xl pt-10-lg pt-10-md pb-16 pl-80-xl pl-54-lg pl-8">
+                <div className="bg-dark-purple block3">
                   <div className="flex pb-6 pb-4-md">
                     <div className="text-light-purple-01 span">03<hr className="text-white" /></div>
                     <h4 className="text-gray-01 pl-4">GROWTH</h4>
@@ -122,7 +121,7 @@ function App () {
             <React.Fragment>
               <div className="athlets mb-4">
                 <div className="pl-5">
-                  <h2 className="text-gray-02 pb-16-xl pb-8-lg pb-10-md">ATHLETS</h2>
+                  <h2 className="text-gray-02 pb-10-md">ATHLETS</h2>
                 </div>
                 <div className="img-container w-70-sm">
                   <img src={imgFootballMobile} alt="ball-player" className="w-full"/>
@@ -134,7 +133,7 @@ function App () {
               </div>
               <div className="player mt-3">
                 <div className="pl-5">
-                  <h2 className="text-gray-02 pb-16-xl pb-8-lg pb-10-md">PLAYERS</h2>
+                  <h2 className="text-gray-02 pb-10-md">PLAYERS</h2>
                 </div>
                 <div className="img-container">
                   <img src={imgBasMobile} alt="ball-player" className="w-full"/>
@@ -146,8 +145,6 @@ function App () {
               </div>
             </React.Fragment>
           }
-          
-        </div>
     </div>
     )
 }
