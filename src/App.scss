@@ -39,29 +39,33 @@ p {
 }
 
 hr {border-width: 3px;border-radius: 0.25rem;}
-.bg-white   {background-color: map-get($map: $colors, $key: white) !important;}
-.bg-purple-02 {background-color: map-get($map: $colors, $key: purple-02) !important;}
-.bg-light-purple-02 {background-color: map-get($map: $colors, $key: light-purple-02) !important;}
-.bg-dark-purple {background-color: map-get($map: $colors, $key: dark-purple) !important;}
+.bg-white   {background-color: map-get($map: $colors, $key: "white");}
+.bg-purple-02 {background-color: map-get($map: $colors, $key: purple-02);}
+.bg-light-purple-02 {background-color: map-get($map: $colors, $key: light-purple-02);}
+.bg-dark-purple {background-color: map-get($map: $colors, $key: dark-purple);}
 
-.text-white {color: map-get($map: $colors, $key: white) !important;}
-.text-black {color: map-get($map: $colors, $key: black) !important;}
+.text-white {color: map-get($map: $colors, $key: "white") !important;}
+.text-black {color: map-get($map: $colors, $key: "black") !important;}
 .text-gray-01 {color: map-get($map: $colors, $key: gray-01) !important;}
 .text-gray-02 {color: map-get($map: $colors, $key: gray-02) !important;}
-.text-purple-01 {color: map-get($map: $colors, $key: purple-01) !important;}
+.text-purple-01 {
+    border: 3px solid map-get($map: $colors, $key: purple-01);
+    // color: map-get($map: $colors, $key: purple-01) !important;
+}
 .text-light-purple-01 {color: map-get($map: $colors, $key: light-purple-01) !important;}
 
 // spacing
 .pt-16 {padding-top: 4rem;}
 .pt-18 {padding-top: 4.5rem;}
+.pb-4 {padding-bottom: 1rem;}
 .pb-6 {padding-bottom: 1.5rem;}
 .pl-4 {padding-left: 1rem;}
 .pl-5 {padding-left: 0.625rem;}
 .py-16 {padding-top: 4rem;padding-bottom: 4rem;}
 .py-18 {padding-top: 4.5rem;padding-bottom: 4.5rem;}
 
-.mt-3 {margin-top: 0.75rem;}
-.mb-4 {margin-bottom: 1rem;}
+.mt-12 {margin-top: 3rem;}
+.mb-16 {margin-bottom: 4rem;}
 
 .alice-carousel {
     margin-top: -2.75rem;
@@ -109,7 +113,6 @@ hr {border-width: 3px;border-radius: 0.25rem;}
         h2 {padding-bottom: 2rem;}
     }
     .block2 {
-        padding-top: 3.5rem;
         padding-bottom: 3.5rem;
         padding-left: 48%;
         padding-right: 2.5rem;
@@ -132,7 +135,17 @@ hr {border-width: 3px;border-radius: 0.25rem;}
     }
 
     .block1 {
+        padding-top: 3.5rem;
+        padding-left: 2rem;
+
         h2 {padding-bottom: 2rem;}
+    }
+    .block2 {
+        padding-left: 2rem;
+    }
+    .block3 {
+        padding-bottom: 4rem;
+        padding-left: 2rem;
     }
 }
 
@@ -172,35 +185,55 @@ hr {border-width: 3px;border-radius: 0.25rem;}
         }
 
         .block1 {
-            h2 {padding-bottom: 4rem;}
+            padding-top: 8rem;
+            padding-bottom: 3.5rem;
+            padding-left: 20rem;
+
+            h2 {padding-bottom: 4.5rem;}
+        }
+        .block2 {
+            padding-top: 3rem;
+            padding-bottom: 6rem;
+            padding-left: 20rem;
+        }
+        .block3 {
+            padding-top: 5.5rem;
+            padding-left: 20rem;
         }
     }
 }
 
 @media (min-width: map-get($map: $grid-breakpoints, $key: lg)) and (max-width: 1440px){
-    .w-35-lg    {width: 35%;}
-    .w-40-lg    {width: 40%;}
+    .w-50-lg    {width: 50%;}
+    .w-60-lg    {width: 60%;}
     .pb-8-lg    {padding-bottom: 2rem;}
+
+    h2 {font-size: 84px;}
+    p {font-size: 18px;}
 
     .athlets {
         .img-container {
-            .img-lg {width: 480px;}
+            padding-top: 2rem;
+            padding-left: 2rem;
+
+            .img-lg {width: 520px;}
         }
 
         .block1 {
-            padding-top: 2.5rem;
-            padding-bottom: 2.5rem;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
             padding-right: 6rem;
 
             h2 {padding-bottom: 2rem;}
         }
         .block2 {
-            padding-bottom: 2.5rem;
+            padding-top: 1.75rem;
+            padding-bottom: 1.75rem;
             padding-right: 6rem;
         }
         .block3 {
-            padding-top: 5rem;
-            padding-bottom: 5rem;
+            padding-top: 3.5rem;
+            padding-bottom: 3.5rem;
             padding-right: 6rem;
         }
     }
@@ -209,10 +242,26 @@ hr {border-width: 3px;border-radius: 0.25rem;}
         .img-container {
             right: 0;
             padding-left: 0;
-            padding-right: 5rem;
-            margin-top: 1.75rem;
+            padding-top: 0.35rem;
 
-            .img-lg {width: 650px;}
+            .img-lg {width: 700px;}
+        }
+        .block1 {
+            padding-top: 5rem;
+            padding-bottom: 2rem;
+            padding-left: 9rem;
+
+            h2 {padding-bottom: 2rem;}
+        }
+        .block2 {
+            padding-top: 2rem;
+            padding-bottom: 2.5rem;
+            padding-left: 9rem;
+
+        }
+        .block3 {
+            padding-top: 2.5rem;
+            padding-left: 9rem;
         }
     }
  }
@@ -220,20 +269,20 @@ hr {border-width: 3px;border-radius: 0.25rem;}
 @media (min-width: map-get($map: $grid-breakpoints, $key: md)) and (max-width: 1279px) {
     p { font-size: 18px; }
     .w-55-md    {width: 55%;}
+    .w-50-md    {width: 50%;}
     .w-60-md    {width: 60%;}
-    .pb-4-md    {padding-bottom: 1rem;}
     .pb-10-md   {padding-bottom: 2.5rem;}
     
     .athlets {
         .img-container {
             left: 0;
+            padding-left: 0;
+            padding-top: 5rem
         }
 
         .block1 {
             padding-top: 5rem;
             padding-left: 38%;
-
-            h2{padding-bottom: 2.5rem;}
         }
         .block2 {
             padding-top: 2rem;
@@ -251,6 +300,19 @@ hr {border-width: 3px;border-radius: 0.25rem;}
             transform: none;
             right: 0;
             margin-top: 2.5rem;
+        }
+
+        .block1 {
+            padding-bottom: 1rem;
+
+            h2 {padding-bottom: 2.5rem;}
+        }
+        .block2 {
+            padding-top: 3.5rem;
+            padding-bottom: 4rem;
+        }
+        .block3 {
+            padding-top: 2.5rem;
         }
     }
 }
@@ -295,11 +357,12 @@ hr {border-width: 3px;border-radius: 0.25rem;}
             bottom: 0;
             margin: auto;
             padding-top: 0;
+            padding-left: 0;
             z-index: 999;
         }
 
         .alice-carousel {
-            margin-top: -2.75rem;
+            margin-top: -3rem;
             &__stage {
                 min-height: 290px;
             }

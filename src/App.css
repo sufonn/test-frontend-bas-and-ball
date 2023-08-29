@@ -304,27 +304,27 @@ hr {
 }
 
 .bg-white {
-  background-color: !important;
+  background-color: #FFFFFF;
 }
 
 .bg-purple-02 {
-  background-color: #5E3DB3 !important;
+  background-color: #5E3DB3;
 }
 
 .bg-light-purple-02 {
-  background-color: #F5F4F9 !important;
+  background-color: #F5F4F9;
 }
 
 .bg-dark-purple {
-  background-color: #090C35 !important;
+  background-color: #090C35;
 }
 
 .text-white {
-  color: !important;
+  color: #FFFFFF !important;
 }
 
 .text-black {
-  color: !important;
+  color: #000000 !important;
 }
 
 .text-gray-01 {
@@ -336,7 +336,7 @@ hr {
 }
 
 .text-purple-01 {
-  color: #603EBE !important;
+  border: 3px solid #603EBE;
 }
 
 .text-light-purple-01 {
@@ -349,6 +349,10 @@ hr {
 
 .pt-18 {
   padding-top: 4.5rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .pb-6 {
@@ -373,12 +377,12 @@ hr {
   padding-bottom: 4.5rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
+.mt-12 {
+  margin-top: 3rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .alice-carousel {
@@ -421,7 +425,6 @@ hr {
   padding-bottom: 2rem;
 }
 .athlets .block2 {
-  padding-top: 3.5rem;
   padding-bottom: 3.5rem;
   padding-left: 48%;
   padding-right: 2.5rem;
@@ -439,8 +442,19 @@ hr {
   top: 0;
   padding-left: 5rem;
 }
+.player .block1 {
+  padding-top: 3.5rem;
+  padding-left: 2rem;
+}
 .player .block1 h2 {
   padding-bottom: 2rem;
+}
+.player .block2 {
+  padding-left: 2rem;
+}
+.player .block3 {
+  padding-bottom: 4rem;
+  padding-left: 2rem;
 }
 
 @media (min-width: 1920px) {
@@ -476,48 +490,89 @@ hr {
     transform: translateX(60%) !important;
     margin-left: 3rem;
   }
+  .player .block1 {
+    padding-top: 8rem;
+    padding-bottom: 3.5rem;
+    padding-left: 20rem;
+  }
   .player .block1 h2 {
-    padding-bottom: 4rem;
+    padding-bottom: 4.5rem;
+  }
+  .player .block2 {
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    padding-left: 20rem;
+  }
+  .player .block3 {
+    padding-top: 5.5rem;
+    padding-left: 20rem;
   }
 }
 @media (min-width: 1280px) and (max-width: 1440px) {
-  .w-35-lg {
-    width: 35%;
+  .w-50-lg {
+    width: 50%;
   }
-  .w-40-lg {
-    width: 40%;
+  .w-60-lg {
+    width: 60%;
   }
   .pb-8-lg {
     padding-bottom: 2rem;
   }
+  h2 {
+    font-size: 84px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .athlets .img-container {
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
   .athlets .img-container .img-lg {
-    width: 480px;
+    width: 520px;
   }
   .athlets .block1 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
     padding-right: 6rem;
   }
   .athlets .block1 h2 {
     padding-bottom: 2rem;
   }
   .athlets .block2 {
-    padding-bottom: 2.5rem;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
     padding-right: 6rem;
   }
   .athlets .block3 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
     padding-right: 6rem;
   }
   .player .img-container {
     right: 0;
     padding-left: 0;
-    padding-right: 5rem;
-    margin-top: 1.75rem;
+    padding-top: 0.35rem;
   }
   .player .img-container .img-lg {
-    width: 650px;
+    width: 700px;
+  }
+  .player .block1 {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    padding-left: 9rem;
+  }
+  .player .block1 h2 {
+    padding-bottom: 2rem;
+  }
+  .player .block2 {
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+    padding-left: 9rem;
+  }
+  .player .block3 {
+    padding-top: 2.5rem;
+    padding-left: 9rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -527,24 +582,23 @@ hr {
   .w-55-md {
     width: 55%;
   }
+  .w-50-md {
+    width: 50%;
+  }
   .w-60-md {
     width: 60%;
-  }
-  .pb-4-md {
-    padding-bottom: 1rem;
   }
   .pb-10-md {
     padding-bottom: 2.5rem;
   }
   .athlets .img-container {
     left: 0;
+    padding-left: 0;
+    padding-top: 5rem;
   }
   .athlets .block1 {
     padding-top: 5rem;
     padding-left: 38%;
-  }
-  .athlets .block1 h2 {
-    padding-bottom: 2.5rem;
   }
   .athlets .block2 {
     padding-top: 2rem;
@@ -560,6 +614,19 @@ hr {
     transform: none;
     right: 0;
     margin-top: 2.5rem;
+  }
+  .player .block1 {
+    padding-bottom: 1rem;
+  }
+  .player .block1 h2 {
+    padding-bottom: 2.5rem;
+  }
+  .player .block2 {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+  }
+  .player .block3 {
+    padding-top: 2.5rem;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -611,10 +678,11 @@ hr {
     bottom: 0;
     margin: auto;
     padding-top: 0;
+    padding-left: 0;
     z-index: 999;
   }
   .athlets .alice-carousel {
-    margin-top: -2.75rem;
+    margin-top: -3rem;
   }
   .athlets .alice-carousel__stage {
     min-height: 290px;
