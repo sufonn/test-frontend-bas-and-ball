@@ -6,7 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm i` then
+### `npm i`
+Install package
 
 ### `npm start`
 
@@ -15,11 +16,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 
-## Stylesheets
+### Stylesheets
 
-    index.css   : Reset style (fixed)
-    App.scss    : Custom style (adjustable)
+    - index.css   : Reset style (fixed)
+    - App.scss    : Custom style (adjustable)
 
+Install sass package `npm i -g sass`
 
-sass ./src/App.scss ./src/App.css
-### `npx tailwindcss -i ./src/input.css -o ./src/output.css --watch`
+Complile `.sass` or `.scss` to `.css` use command:
+### `sass ./src/App.scss ./src/App.css --watch`
