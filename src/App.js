@@ -13,21 +13,21 @@ function App () {
     const itemsAthlets = [
       <div className="pt-18 px-6-sm card" onDragStart={handleDragStart}>
         <div className="flex pb-4">
-          <div className="text-black span">01<hr className="text-purple-01" /></div>
+          <div className="text-black span">01<hr className="hr-purple-01" /></div>
           <h4 className="text-gray-01 pl-2-sm">CONNECTION</h4>
         </div>
         <p className="text-black">Connect with coaches directly, you can ping coaches to view profile.</p>
       </div>,
       <div className="py-18 px-6-sm card" onDragStart={handleDragStart}>
         <div className="flex pb-4">
-          <div className="text-black span">02<hr className="text-purple-01" /></div>
+          <div className="text-black span">02<hr className="hr-purple-01" /></div>
           <h4 className="text-gray-01 pl-2-sm">COLLABORATION</h4>
         </div>
         <p className="text-black">Work with other student athletes to increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.</p>
       </div>,
       <div className="py-18 px-6-sm card" onDragStart={handleDragStart}>
         <div className="flex pb-4">
-          <div className="text-black span">03<hr className="text-purple-01" /></div>
+          <div className="text-black span">03<hr className="hr-purple-01" /></div>
           <h4 className="text-gray-01 pl-2-sm">GROWTH</h4>
         </div>
         <p className="text-black">Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc</p>
@@ -37,21 +37,21 @@ function App () {
     const itemsPlayer = [
       <div className="pt-16 px-6-sm card" onDragStart={handleDragStart}>
         <div className="flex pb-4">
-          <div className="text-black span">01<hr className="text-purple-01" /></div>
+          <div className="text-black span">01<hr className="hr-purple-01" /></div>
           <h4 className="text-gray-01 pl-2-sm">CONNECTION</h4>
         </div>
         <p className="text-black">Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.</p>
       </div>,
       <div className="py-16 px-6-sm card" onDragStart={handleDragStart}>
         <div className="flex pb-4">
-          <div className="text-black span">02<hr className="text-purple-01" /></div>
+          <div className="text-black span">02<hr className="hr-purple-01" /></div>
           <h4 className="text-gray-01 pl-2-sm">COLLABORATION</h4>
         </div>
         <p className="text-black">Work with recruiter to increase your chances of finding talented athlete.</p>
       </div>,
       <div className="py-16 px-6-sm card" onDragStart={handleDragStart}>
         <div className="flex pb-4">
-          <div className="text-black span">03<hr className="text-purple-01" /></div>
+          <div className="text-black span">03<hr className="hr-purple-01" /></div>
           <h4 className="text-gray-01 pl-2-sm">GROWTH</h4>
         </div>
         <p className="text-black">Save your time, recruit proper athlets for your team.</p>
@@ -69,21 +69,21 @@ function App () {
                 <div className="block1">
                     <h2 className="text-gray-02">ATHLETS</h2>
                     <div className="flex pb-4">
-                    <div className="text-black span">01<hr className="text-purple-01" /></div>
+                    <div className="text-black span">01<hr className="hr-purple-01" /></div>
                     <h4 className="text-gray-01 pl-4">CONNECTION</h4>
                     </div>
                     <p className="text-black">Connect with coaches directly, you can ping coaches to view profile.</p>
                 </div>
                 <div className="bg-light-purple-02 block2">
                     <div className="flex pb-4">
-                    <div className="text-black span">02<hr className="text-purple-01" /></div>
+                    <div className="text-black span">02<hr className="hr-purple-01" /></div>
                     <h4 className="text-gray-01 pl-4">COLLABORATION</h4>
                     </div>
                     <p className="text-black">Work with other student athletes to increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.</p>
                 </div>
                 <div className="bg-purple-02 block3">
                     <div className="flex pb-4">
-                    <div className="text-black span">03<hr className="text-white" /></div>
+                    <div className="text-black span">03<hr className="hr-white" /></div>
                     <h4 className="text-gray-01 pl-4">GROWTH</h4>
                     </div>
                     <p className="text-white">Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc</p>
@@ -96,21 +96,21 @@ function App () {
                 <div className="block1">
                   <h2 className="text-gray-02">PLAYERS</h2>
                   <div className="flex pb-4">
-                    <div className="text-black span">01<hr className="text-purple-01" /></div>
+                    <div className="text-black span">01<hr className="hr-purple-01" /></div>
                     <h4 className="text-gray-01 pl-4">CONNECTION</h4>
                   </div>
                   <p className="text-black w-39-xl w-50-lg w-50-md">Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.</p>
                 </div>
                 <div className="bg-light-purple-02 block2">
                   <div className="flex pb-4">
-                    <div className="text-black span">02<hr className="text-purple-01" /></div>
+                    <div className="text-black span">02<hr className="hr-purple-01" /></div>
                     <h4 className="text-gray-01 pl-4">COLLABORATION</h4>
                   </div>
                   <p className="text-black w-60-lg w-55-md">Work with recruiter to increase your chances of finding talented athlete.</p>
                 </div>
                 <div className="bg-dark-purple block3">
                   <div className="flex pb-4">
-                    <div className="text-light-purple-01 span">03<hr className="text-white" /></div>
+                    <div className="text-light-purple-01 span">03<hr className="hr-white" /></div>
                     <h4 className="text-gray-01 pl-4">GROWTH</h4>
                   </div>
                   <p className="text-white">Save your time, recruit proper athlets for your team.</p>

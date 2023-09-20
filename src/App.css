@@ -1,4 +1,5 @@
 .alice-carousel .animated {
+  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
@@ -7,6 +8,7 @@
 }
 
 .alice-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
 }
 
@@ -335,12 +337,16 @@ hr {
   color: #E7E7E7 !important;
 }
 
-.text-purple-01 {
-  border: 3px solid #603EBE;
-}
-
 .text-light-purple-01 {
   color: #8F6BE8 !important;
+}
+
+.hr-white {
+  border: 3px solid #FFFFFF;
+}
+
+.hr-purple-01 {
+  border: 3px solid #603EBE;
 }
 
 .pt-16 {
@@ -488,7 +494,7 @@ hr {
   }
   .player .img-container {
     transform: translateX(60%) !important;
-    margin-left: 3rem;
+    padding-left: 8rem;
   }
   .player .block1 {
     padding-top: 8rem;
@@ -550,7 +556,7 @@ hr {
     padding-right: 6rem;
   }
   .player .img-container {
-    right: 0;
+    right: 10px;
     padding-left: 0;
     padding-top: 0.35rem;
   }
@@ -704,4 +710,6 @@ hr {
   .player .alice-carousel__stage {
     min-height: 250px;
   }
-}/*# sourceMappingURL=App.css.map */
+}
+
+/*# sourceMappingURL=App.css.map */

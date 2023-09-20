@@ -48,11 +48,13 @@ hr {border-width: 3px;border-radius: 0.25rem;}
 .text-black {color: map-get($map: $colors, $key: "black") !important;}
 .text-gray-01 {color: map-get($map: $colors, $key: gray-01) !important;}
 .text-gray-02 {color: map-get($map: $colors, $key: gray-02) !important;}
-.text-purple-01 {
-    border: 3px solid map-get($map: $colors, $key: purple-01);
-    // color: map-get($map: $colors, $key: purple-01) !important;
-}
 .text-light-purple-01 {color: map-get($map: $colors, $key: light-purple-01) !important;}
+.hr-white {
+    border: 3px solid map-get($map: $colors, $key: "white");
+}
+.hr-purple-01 {
+    border: 3px solid map-get($map: $colors, $key: purple-01);
+}
 
 // spacing
 .pt-16 {padding-top: 4rem;}
@@ -181,7 +183,7 @@ hr {border-width: 3px;border-radius: 0.25rem;}
     .player {
         .img-container {
             transform: translateX(60%) !important;
-            margin-left: 3rem;
+            padding-left: 8rem;
         }
 
         .block1 {
@@ -240,7 +242,7 @@ hr {border-width: 3px;border-radius: 0.25rem;}
 
     .player {
         .img-container {
-            right: 0;
+            right: 10px;
             padding-left: 0;
             padding-top: 0.35rem;
 
