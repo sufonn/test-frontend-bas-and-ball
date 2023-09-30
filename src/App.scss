@@ -115,7 +115,7 @@ hr {border-width: 3px;border-radius: 0.25rem;}
         h2 {padding-bottom: 2rem;}
     }
     .block2 {
-        padding-bottom: 3.5rem;
+        // padding-bottom: 3.5rem;
         padding-left: 48%;
         padding-right: 2.5rem;
 
@@ -154,6 +154,7 @@ hr {border-width: 3px;border-radius: 0.25rem;}
 
 @media (min-width: map-get($map: $grid-breakpoints, $key: xl)) {
     .w-39-xl    {width: 39%;}
+    .pb-4 {padding-bottom: 1.5rem;}
     .pb-16-xl   {padding-bottom: 4rem;}
 
     .athlets {
@@ -165,18 +166,22 @@ hr {border-width: 3px;border-radius: 0.25rem;}
 
         .block1 {
             padding-top: 2rem;
-            padding-bottom: 3.5rem;
+            padding-bottom: 3.3rem;
             padding-left: 50%;
             padding-right: 16rem;
     
             h2 {padding-bottom: 4rem;}
         }
         .block2 {
+            padding-left: 50%;
             padding-right: 16rem;
+            padding-top: 3.3rem;
+            padding-bottom: 3.3rem;
         }
         .block3 {
             padding-top: 5.5rem;
             padding-bottom: 5.5rem;
+            padding-left: 50%;
             padding-right: 16rem;
         }
     }
@@ -338,11 +343,13 @@ hr {border-width: 3px;border-radius: 0.25rem;}
         line-height: 18px !important;
     }
     .span {
-        padding-top: 5px;
+        padding-top: 8px;
         font-size: 14px;
-        line-height: 16px !important;
+        line-height: 10px !important;
     }
-    hr  {border-width: 2px;}
+    hr  {
+        border-width: 2px !important;
+    }
 
     .disp {
         display: none;
